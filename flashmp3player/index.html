@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- THIS FILE HAS THE ACCESS TO FLASHPLAYER-->
+
+<title>Songs Player</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
+<!-- Location of javascript. -->
+<script language="javascript" type="text/javascript" src="swfobject.js" ></script>
+
+</head>
+<body>
+
+	<!-- Navbar -->
+	<div class="container-fluid">
+	<div class="col-sm-12">
+    <div class="spad">
+    
+    
+	<div class="col-sm-1">
+    <img class="res_icon" src="../img/bmh_ico.png">
+    </div>
+    <div class="col-sm-6">
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+        	
+			
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Bangla Music Hub</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						
+						<li><a href="../storelogin.php">Store</a></li>
+						<li><a href="../sharelogin.php">Share</a></li>
+						
+						
+						
+						<li><a href="index.html">Music Player</a></li>
+					</ul>
+				</div>
+	</nav>
+	
+	
+    </div></div>
+    <div class="col-sm-3">
+    </div>
+	<div class="col-sm-2">
+            	<div class="fasts">
+					<ul class="nav navbar-nav" style="background: none; color:#FFF">
+						<li><a class="active" href="../profile.html">Login or Sign Up</a></li>
+						<br></br>
+						<li> Here are some Statistics</li>
+						<br></br>
+						<li><form action="rating.php" method="POST">
+                                                     <input type="submit" name="view" value="view" />
+                                                      <br></br>
+                                                       </form>
+                                                </li>
+					</ul>
+                </div>
+			</div>
+    
+	</div>
+	</div>
+	</div>
+	<!-- Navbar Ends -->
+
+
+<div id="player">
+<h1 class="bigHead">No flash player!</h1>
+<p class="bigHeadS">It looks like you don't have flash player installed. <a href="http://www.macromedia.com/go/getflashplayer" >Click here</a> to go to Macromedia download page.</p>
+</div>
+<h1 class="bigHeadS"> some hit songs!! </h1>
+<!-- Script that embeds player. -->
+<script language="javascript" type="text/javascript">
+var so = new SWFObject("flashmp3player.swf", "player", "290", "247", "9"); // Location of swf file. You can change player width and height here (using pixels or percents).
+so.addParam("quality", "high");
+so.addVariable("content_path","mp3"); // Location of a folder with mp3 files (relative to php script).
+so.addVariable("color_path","default.xml"); // Location of xml file with color settings.
+so.addVariable("script_path","flashmp3player.php"); // Location of php script.
+so.write("player");
+</script>
+
+</body>
+</html>

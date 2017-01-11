@@ -1,0 +1,173 @@
+
+body{
+	background-color: #85DB18;
+	background:url(../img/bg.jpg);
+	
+}
+
+
+p{
+	font-family:'Cantarell';
+}
+
+.icon {
+	vertical-align:middle;
+}
+
+.res_icon {
+	vertical-align:middle;
+	max-width: 60%;
+	height: auto;
+	vertical-align:middle;
+	float:right;
+}
+
+
+.main_icon {
+	vertical-align:middle;
+	max-width: 80%;
+	height: auto;
+	vertical-align:middle;
+	float:right;
+}
+
+
+.func_list {
+	padding-top:100px;
+}
+
+.ico_text {
+	text-align:left;
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	color:#FFF;
+}
+
+.bigHeadS{
+	font-family:'questa_granderegular';
+	font-size:50px;
+	color: #FFF;
+
+}
+
+.bigHead {
+	font-family:'questa_granderegular';
+	font-size:70px;
+	color: #FFF;
+}
+
+.spad {
+	height: 20px;
+}
+
+.navbar-brand {
+	font-family:'questa_granderegular';
+	font-size:20px;
+	color: #303030;
+}
+
+.navbar-nav {
+	font-family:'Cantarell';
+	font-size:14px;
+	text-align:center;
+}
+
+.navbar-default	{
+	background-color: #FFF;
+	outline: none;
+	border: none;
+	color: #303030;
+
+}
+
+.fasts {
+	background-color: none;
+	outline: none;
+	border: none;
+	text-align:right;
+	color: #F00;
+}
+
+.panel{
+	opacity: 0.5;
+}
+
+
+.panel:hover{
+	opacity: 1;
+}
+
+
+.img {
+	object-fit: cover
+}
+
+.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+.img a:hover img {
+    border:1px solid #0000ff;
+}
+
+.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 200pxpx;
+    margin: 10px;
+	font-family: Arial;
+	font-size: 20px;
+}
+
+
+.addcart {
+	position: relative;
+	bottom: 80px;
+	left: 40px;
+	width: 200px;
+	opacity: 0;
+}
+.addcart1 {
+	position: relative;
+	bottom: -100px;
+	left: 770px;
+	width: 1000px;
+	opacity: 1;
+}
+
+.albumarts {
+	padding-left: 100px
+}
+
+#cart:hover {
+	opacity:1;
+}
+
+#albumart:hover  ~ #cart {
+	opacity: 1;
+}
+
+.comm{
+	width: 500px
+}
+
+@font-face {
+    font-family: 'questa_granderegular';
+    src: url('2-Questa_Grande_Regular-webfont.eot');
+    src: url('2-Questa_Grande_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('2-Questa_Grande_Regular-webfont.woff2') format('woff2'),
+         url('2-Questa_Grande_Regular-webfont.woff') format('woff'),
+         url('2-Questa_Grande_Regular-webfont.ttf') format('truetype'),
+         url('2-Questa_Grande_Regular-webfont.svg#questa_granderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('Cantarell-Regular.ttf') format(truetype);
+}
+
